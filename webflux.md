@@ -83,7 +83,7 @@ parallel: 고정 크기를 만드는 scheduler로 CPU를 많이 사용하지만 
 single: 한 Thread를 공유한다.
 immediate:  현재 Thread에서 실행한다. newParallel을 통해 원하는 쓰레드 풀을 만들 수 있다.
 ``` java
-function subscribeFlux(List<String> msgs){
+public void subscribeFlux(List<String> msgs){
 	Flux.fromIterable(msgs)
 		.parallel()
 		.runOn(Schedulers.parallel())
