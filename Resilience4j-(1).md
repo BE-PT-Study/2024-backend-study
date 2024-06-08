@@ -4,7 +4,7 @@
 resilience4j는 nextflix hystrix에서 영감을 받아 만들어진 경량 내결함성 라이브러리이다.
 현재 netflix hystrix는 deprecated되었기 때문에 resilience4j를 쓰는 것을 권장한다.(* 참조: 1)
 resilience4j는 circuit breaker, rate limiter, retry, bulkhead를 지원하여 장애 전파를 방지한다.
-resilience4j 2.0는 java17, Kotlin, spring boot, micronaut 지원하며 경량화된 라이브러리가 되기 위해 vavr에 대한 종속성 제거하였다.
+resilience4j 2.0는 java17, Kotlin, spring boot, micronaut 지원하며 경량화된 라이브러리가 되기 위해 vavr(vavr는 다른 외부 라이브러리의 종속성이 없다)외의 종속성을 제거하였다.
 
 *내결함성: 시스템이 하드웨어 또는 소프트웨어의 오류, 장애 또는 고장에도 계속해서 정상적으로 동작하는 능력
 
